@@ -1,56 +1,227 @@
-/* This is the syntax for a CSS comment. */
+* {
+    box-sizing: border-box;
+      margin: 0;
+    padding: 0;
+}
 
-/* Typically you put all of your general element styles at the top. */
+
+header {
+    background-color: #45304b;
+    color: #ffffff;
+    height: 105px;
+    margin-bottom: 60px;
+}
+
+header h1 {
+    font-size: 40px;
+    text-transform:uppercase;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 24px;
+    padding: 40px 8% 0px 8%;
+}
+
+#social {
+    float: right;
+    margin-right: 8%;
+}
+
+#social p{
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    padding: 15px 0 0 0px;
+    margin: 32px 20px -20px -60px;
+}
+
+#social img{
+    width: 25px;
+    margin: -6px 0 0 0px;
+}
+
+header nav {
+    clear: both;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+    text-transform:uppercase;
+    background-color: #8d7693;
+    color: #ffffff;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 8%;
+}
+
+header a {
+    color: #ffffff;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #FFF0F5;
+}
+
+header a:active {
+    text-decoration: underline;
+}
 
 body {
-	background-color: #eeeeee;
-}
-
-h1 {
-	color: #111111;
-}
-
-h2 {
-
+    font-size: 12px;
 }
 
 p {
-
+    font-family: helvetica, arial, sans-serif;
+    line-height: 22px;
+    margin-bottom: 12px;
 }
 
-img {
-
+article {
+    clear: both;
+    margin: 5% 8% 2% 8%;
 }
 
-
-/* Container or module styles probably come next. */
-
-header {
-
+article h1 {
+     font-size: 24px;
+    color:#4D067D;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 22px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
-nav {
-
+article h2 {
+     font-size: 16px;
+    color:#707070;
+    font-family: helvetica, arial, sans-serif;
+    line-height: 22px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
-nav a {
-
+article img {
+    border: 0px solid #ffffff;
+    padding-right: 0px;
+    float: left;
 }
 
-section {
-
+#about img{
+padding-right: 40px;
+padding-bottom: 2%;
 }
 
-aside {
+#contact img{
+    width: 550px;
+    padding-bottom: 60px;
+    padding-right: 80px;
+}
 
+#contact {
+padding-top: 20px;
+}
+
+#clips img{
+width: 25%;
+margin-bottom: 30px;
+margin-right: 40px;
+    margin-left: 30px;
+    border: 2px;
+border-style:solid;
+border-color: #000000; 
+}
+
+#photography img{
+    width: 64%;
+    margin-top: 0;
+    margin-right: 18%;
+    margin-bottom: 40px;
+    margin-left: 18%;
+}
+
+#design img {
+    width: 40%;
+     margin-top: 0;
+    margin-right: 30%;
+    margin-bottom: 40px;
+    margin-left: 30%;
 }
 
 footer {
-
+    clear: both;
+    margin-bottom: -16px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 10px;
+    background-color: #8d7693;
+    color: #dddddd;
+    padding-left: 2%;
 }
 
-/* Class and ID styles come last because they are the most specific. */
+@media screen and (max-width: 600px) {
+    
+    header { 
+        height: 120px;
+    }
+    
+    header h1 {
+        clear: both;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px 0 20px 20px;
+    }
 
-#copyright {
+    
+    #social {
+        margin: -30px 0 -20px 0;
+        padding: 0 50px 0 0;
+    }
+    
+    #about img {
+        width: 100%;
+        padding-right: 0px;
+    }
+    
+    body { 
+        margin: 0%;
+        padding: 0px;
+    }    
+    
+    header nav {
+    clear: both;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    text-transform:uppercase;
+    background-color: #8d7693;
+    color: #ffffff;
+    height: 60px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 35px;
+    line-height: 25px;
+    text-align: center;
+}
 
+nav a {
+    color: #ffffff;
+    margin-right: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFF0F5;
+        text-decoration: underline;
+}
+        
+ article h1, h2 {
+            text-align: center;
+            padding: 0 0 15px 0;
+        line-height: 30px;
+    }
+    
+        p {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
 }
